@@ -29,7 +29,7 @@
     margin: 20px;
 }
 
-#InsertText{
+textarea{
     width: auto;
     height: auto;
     background-color: #eee0b8;
