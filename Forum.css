@@ -38,4 +38,19 @@ textarea{
     padding: 50px;
     margin: 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#PostButton{
+    color: green;
+
+    font-size: large;
+}
+
+#postButton{ /*the one inside the post box to submit*/
+    color: green;
+
+    font-size: large;
+    display: none;
+
 }
