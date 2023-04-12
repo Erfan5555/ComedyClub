@@ -1,0 +1,115 @@
+body{
+    background: linear-gradient(to left, #02111bff,  #3f4045ff);
+    overflow-x: hidden;
+}
+
+.main{
+    background: white;
+    width:900px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20px;
+    
+}
+.leftcontent{
+    
+    top: 20%;
+    
+    position: fixed;
+    
+    height: 650px;
+    background: #5d737eff;
+    box-shadow: 3px 3px 10px;
+    border: solid white;
+}
+
+nav a{
+    list-style: none;
+    padding: 34px;
+    padding-top: 65px;
+    color: white;
+    font-size: 1.1em;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+nav a:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+nav a:first-child{
+    margin-top: 12px;
+}
+nav a.active{
+    color: black;
+}
+
+.rightcontent{
+    width: 500px;
+    
+    margin-left: 27%;
+}
+
+.tabShow{
+    transition: all .5s ease-in;
+    width: 80%;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 2.3rem;
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+h2{
+    color: darkgrey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+   margin-bottom: 0;
+    margin-top: 10px;
+    border: none;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background: #f4f4f5ff;
+}
+
+.input, p{
+    border:0;
+    border-bottom: 1px solid blue;
+    width:300px;
+    font-size: 1.5em;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding-right: 90px;
+    background:  #f4f4f5ff;
+       
+}
+
+.Radioinput{
+    width:10px;
+    padding: 10px 0; 
+    margin: 10px;
+    height: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.updateBtn{
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 10px;
+    color: white;
+    background: #5d737eff;
+    outline: none;
+   border-color: white;
+    box-shadow: 0px 2px 4px 0px;
+}
