@@ -5,7 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile settings</title>
-    <link rel="stylesheet" href="profileSettings.css" />
+    <link
+      id="pagesize"
+      rel="stylesheet"
+      type="text/css"
+      href="profileSettings.css"
+    />
+
+    <script type="text/javascript">
+      function layoutSize() {
+        var cssStyleSheet = document.getElementById("pagesize");
+        if (window.innerWidth < 1200) {
+          cssStyleSheet.setAttribute("href", "profileSettingsMedium.css");
+        }
+        if (window.innerWidth <= 900) {
+          cssStyleSheet.setAttribute("href", "profileSettingsMobile.css");
+        }
+        if (window.innerWidth >= 1200) {
+          cssStyleSheet.setAttribute("href", "profileSettings.css");
+        }
+      }
+      window.onresize = layoutSize;
+      layoutSize();
+    </script>
+
     <link rel="stylesheet" href="fontawesome/css/all.css" />
     <script
       src="https://kit.fontawesome.com/cb7576b6ac.js"
