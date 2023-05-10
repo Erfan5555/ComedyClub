@@ -4,7 +4,7 @@ body{
 }
 
 .main{
-    background: white;
+    background: #f5f5dc;
     width:100%;
     margin: 0 auto;
     position: relative;
@@ -108,7 +108,7 @@ h2{
     background: #f4f4f5ff;
 }
 
-.input, p{
+.input{
     border:0;
     border-bottom: 1px solid blue;
     width:300px;
@@ -147,7 +147,27 @@ h2{
     background:#f4f4f5ff ;
     padding:10px;
     margin-top: 40px;
+    outline-style: solid;
+    outline-width: 2px;
+    border-radius: 3px;
 }
 #user{
     padding-top: 30px;
+}
+#B_events{
+    
+    outline-style: solid;
+    outline-width: 2px;
+    border-radius: 3px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+   
+    margin-bottom: 20px;
+    padding-right: 50px;
+    margin-right: 150px;
+    
+    background:  #f4f4f5ff;
+}
+.EnrolledEvents{
+    padding-bottom: 10px;
 }
