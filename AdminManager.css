@@ -10,7 +10,7 @@ a{
 .left, #makeAdmin, #makeClub{
     
     text-align: center;
-padding-left: 1%;
+
 font-size: 25px;
     margin-bottom: 5px;
 }
@@ -80,6 +80,7 @@ h2{
     border-width: 5px;
     height: 40px;
     background-color: #D9D9D9;
+    padding-left: 0;
 }
 
 .delete{
