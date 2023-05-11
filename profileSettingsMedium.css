@@ -148,8 +148,8 @@ h2{
     padding:10px;
     margin-top: 40px;
     outline-style: solid;
-    outline-width: 2px;
-    border-radius: 3px;
+    outline-width: 5px;
+    border-radius: 10px;
 }
 #user{
     padding-top: 30px;
@@ -157,11 +157,12 @@ h2{
 #B_events{
     
     outline-style: solid;
-    outline-width: 2px;
-    border-radius: 3px;
+    outline-width: 5px;
+    border-radius: 10px;
     padding-bottom: 15px;
-    padding-left: 0px;
-   
+    padding-left: 10px;
+   width: 342px;
+   padding-top: 5px;
     margin-bottom: 20px;
     padding-right: 50px;
     margin-right: 150px;

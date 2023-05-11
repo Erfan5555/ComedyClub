@@ -115,7 +115,7 @@ h2{
     font-size: 1em;
    padding-top: 10px;
    padding-bottom: 10px;
-    padding-left: 0px;
+    padding-left: 10px;
    
     margin-bottom: 20px;
     padding-right: 50px;
@@ -151,8 +151,8 @@ h2{
     margin-top: 40px;
     width: 250px;
     outline-style: solid;
-    outline-width: 2px;
-    border-radius: 3px;
+    outline-width: 5px;
+    border-radius: 10px;
 }
 #user{
     padding-top: 30px;
@@ -160,13 +160,13 @@ h2{
 #B_events{
     
     outline-style: solid;
-    outline-width: 2px;
-    border-radius: 3px;
+    outline-width: 5px;
+    border-radius: 10px;
     padding-bottom: 15px;
-    padding-left: 0px;
-   
+    padding-left: 4px;
+   width: 248px;
     margin-bottom: 20px;
-    padding-right: 50px;
+    padding-right: 0px;
     margin-right: 150px;
     
     background:  #f4f4f5ff;
