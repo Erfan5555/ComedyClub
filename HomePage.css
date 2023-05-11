@@ -1,0 +1,106 @@
+
+body{
+    background-color: #f5f5dc;;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.left{
+    float: left;
+    display: flex;
+padding-left: 1%;
+font-size: 30px;
+
+}
+.topLeft{
+    margin-left: 30px;
+
+}
+.settings{
+    float: right;
+    display: flex;
+    margin-right: 30px;
+    font-size: 30px;
+}
+#title{
+    text-align: center;
+   float: none;
+   font-size: 50px;
+    
+    margin-left:0%;
+}
+.breakTop{
+    height: 5px;
+    color: black;
+    background-color: black;
+    width: 110%;
+    size: 100%;
+    border: none;
+    margin-right: -20px;
+    margin-left: -20px;
+    
+   
+}
+
+.breakMid{
+    height: 7px;
+    color: black;
+    opacity: 20%;
+    background-color: black;
+    width: 1000%;
+    size: 100%;
+    border: none;
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn{
+    width: 80%;
+    height: 60px;
+    text-align: left;
+    border-radius: 10px;
+    border-width: 5px;
+    display: inline-block;
+    
+}
+.btns{
+    margin-bottom: 50px;
+    margin-left: 3%;
+   
+}
+h2{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 35px;
+}
+
+.leftContent{
+    width: 70%;
+  display: inline-block;
+    
+}
+
+.rightContent{
+    display: block;
+    float: right;
+    margin-top: 1%;
+}
+
+.admin{
+    margin-bottom: 15%;
+    border-radius: 10px;
+    border-width: 5px;
+    height: 40px;
+}
+
+.delete{
+    outline-width: 5px;
+    outline-style: solid;
+    margin-left: 5px;
+    border-radius: 10px;
+    
+}

@@ -4,7 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="HomePage.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="topNav">
+      <div class="left">
+        <nav>
+          <a href="#" class="tab active">Home</a>
+          <a href="#" class="tab active topLeft">About</a>
+        </nav>
+      </div>
+      <div class="settings">
+        <nav>
+          <a href="/profileSettings.html" class="tab active topRight"
+            >Settings</a
+          >
+        </nav>
+      </div>
+      <h1 id="title">ClubHub</h1>
+
+      <hr class="breakTop" />
+    </div>
+    <div class="leftContent">
+      <div class="joinedClubs">
+        <h2>Joined Clubs</h2>
+        <div class="btns">
+          <button class="btn">Comedy Club</button>
+          <button class="delete">delete</button>
+        </div>
+      </div>
+
+      <hr class="breakMid" />
+
+      <div class="availbleClubs">
+        <h2>Available Clubs</h2>
+        <div class="btns">
+          <button class="btn">Comedy Club</button>
+          <button class="delete">delete</button>
+        </div>
+        <div class="btns">
+          <button class="btn">Computer Science Club</button>
+          <button class="delete">delete</button>
+        </div>
+        <div class="btns">
+          <button class="btn">Swings Club</button>
+          <button class="delete">delete</button>
+        </div>
+      </div>
+    </div>
+    <div class="rightContent">
+      <button id="makeAdmin" class="admin">Assign Admin Privilages</button>
+      <br />
+      <button id="makeClub" class="admin">Create Club</button>
+    </div>
+  </body>
 </html>

@@ -38,14 +38,18 @@
   <body>
     <div class="topContent">
       <nav class="exit">
-        <a href="#" onclick="exit" class="exitTab">
+        <a
+          href="#"
+          onclick="location.href = document.referrer; return false;"
+          class="exitTab"
+        >
           <i class="fa-solid fa-x"></i
         ></a>
       </nav>
     </div>
     <div class="main">
       <div class="leftcontent">
-        <nav class="Vnav">
+        <div class="Vnav">
           <a href="#" class="tab active">
             <i class="fa-solid fa-circle-user"></i
           ></a>
@@ -55,7 +59,7 @@
           <a href="#Bevents" class="tab"> <i class="fa-solid fa-ticket"></i></a>
 
           <a href="#" class="tab"> <i class="fa-solid fa-ghost"></i></a>
-        </nav>
+        </div>
       </div>
       <div class="rightcontent">
         <div class="profile tabShow">
