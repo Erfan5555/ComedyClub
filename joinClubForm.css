@@ -12,6 +12,8 @@
 }
 .inputs{
     margin-left: 20%;
+    
+   
 }
 h1{
    padding-top: 5%;
@@ -22,6 +24,8 @@ h1{
     
     height: 30px;
     width: 73%;
+    border-radius: 10px;
+    border-width: 5px;
     
 }
 
@@ -55,6 +59,8 @@ h1{
     
     height: 30px;
     width: 73%;
+    border-radius: 10px;
+    border-width: 5px;
 }
 
 .btn-primary{
@@ -66,8 +72,8 @@ h1{
 .btn{
     background: white;
    width: 75%;
-   border-radius: 5px;
-   border-width: thin;
+   border-radius: 10px;
+   border-width: 5px;
    height: 30px;
    text-align: left;
 }
@@ -75,4 +81,6 @@ h1{
     height: 30px;
     width:35%;
     min-width: 100px;
+    border-radius: 10px;
+    border-width: 5px;
 }
