@@ -185,7 +185,13 @@ input{
 
     border: none;
    
-    
-    
 }
 
+.AttendEvents{
+    font-size: 25px;
+    margin: 0;
+   margin-left: 5%;
+   font-weight: bold;
+   max-width: 100%;
+  
+}
