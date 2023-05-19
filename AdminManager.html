@@ -6,66 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="AdminManager.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   </head>
   <body>
-    <div class="topNav">
-      <div class="left">
-        <nav>
-          <a href="#" class="tab active">Home</a>
+    <div id="app">
+      <div class="main">
+        <div class="topNav">
+          <div class="left">
+            <nav>
+              <a href="#" class="tab active">Home</a>
 
-          <button id="makeAdmin" class="admin">Assign Admin</button>
-          <button id="makeClub" class="admin">Create Club</button>
-          <a href="/profileSettings.html" class="tab active topLeft"
-            >Settings</a
-          >
-        </nav>
-      </div>
+              <button id="makeAdmin" class="admin">Assign Admin</button>
+              <button id="makeClub" class="admin" onclick="opencreteClubMenu()">
+                Create Club
+              </button>
+              <a href="/profileSettings.html" class="tab active topLeft"
+                >Settings</a
+              >
+            </nav>
+          </div>
 
-      <br />
-      <h1 id="title"><span class="clubCol">Club</span>Admin</h1>
+          <br />
+          <h1 id="title"><span class="clubCol">Club</span>Admin</h1>
 
-      <hr class="breakTop" />
-    </div>
-    <div class="leftContent">
-      <div class="availbleClubs">
-        <h2>Clubs</h2>
-        <div class="btns">
-          <button class="btn">Comedy Club</button>
-          <button class="delete">delete</button>
+          <hr class="breakTop" />
         </div>
-        <div class="btns">
-          <button class="btn">Computer Science Club</button>
-          <button class="delete">delete</button>
+        <div class="leftContent">
+          <div class="availbleClubs">
+            <h2>Clubs</h2>
+          </div>
         </div>
-        <div class="btns">
-          <button class="btn">Swings Club</button>
-          <button class="delete">delete</button>
+        <div class="rightContent">
+          <h2 class="UserContent">Users</h2>
+          <hr class="break" />
+          <div class="userNumbers">
+            <div class="user">
+              <p class="name">
+                Name: {{ searchedUser ? searchedUser.name : '' }}
+              </p>
+              <p class="userName">
+                UserName: {{ searchedUser ? searchedUser.UserName : '' }}
+              </p>
+              <p class="MemeberID">
+                Member: {{ searchedUser ? searchedUser.memNum : '' }}
+              </p>
+            </div>
+          </div>
+          <hr class="breakUser" />
+          <div class="find">
+            <h2 class="fUser">Find User:</h2>
+            <input
+              type="search"
+              id="searchMemberID"
+              name="q"
+              placeholder="Enter User Name"
+              v-model="searchUsername"
+            />
+            <br />
+            <button id="removeUser" class="userOption">Remove</button>
+            <button
+              id="moreDetails"
+              class="userOption1"
+              v-on:click="searchUser"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="rightContent">
-      <h2 class="UserContent">Users</h2>
-      <hr class="break" />
-      <div class="userNumbers">
-        <div class="user">
-          <p class="name">Name: Bob Marlin</p>
-          <p class="userName">UserName: ManBat</p>
-          <p class="MemeberID">Member: 123456</p>
-        </div>
-      </div>
-      <hr class="breakUser" />
-      <div class="find">
-        <h2 class="fUser">Find User:</h2>
-        <input
-          type="search"
-          id="searchMemberID"
-          name="q"
-          placeholder="Enter User Name"
-        />
-        <br />
-        <button id="removeUser" class="userOption">Remove</button>
-        <button id="moreDetails" class="userOption1">Search</button>
+      <div class="popup">
+        <input type="text" name="clubname" placeholder="Enter Club Name" />
+        <button class="createClub">Create</button>
       </div>
     </div>
+    <script src="AdminManager.js"></script>
   </body>
 </html>
