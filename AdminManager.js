@@ -1,3 +1,4 @@
+//needs to beable to make a new club home page and save it in db
 function opencreteClubMenu() {
     var main = document.getElementsByClassName('main')[0];
     var popup = document.getElementsByClassName('popup')[0];
@@ -22,7 +23,8 @@ function opencreteClubMenu() {
         var deleteButton = document.createElement('button');
         deleteButton.classList.add('delete');
         deleteButton.textContent = 'delete';
-  
+
+        //delete club from db
         deleteButton.addEventListener('click', function() {
           btnsDiv.remove();
         });
@@ -40,12 +42,14 @@ function opencreteClubMenu() {
   }
 
 
-
+//needs to connect to db to get users
   var users = [
     { name: 'Bob Marlin', UserName: 'ManBat', memNum: 123456 },
     { name: 'bart newmen', UserName: 'pappaSmurf', memNum: 123445 },
     { name: 'manni bem', UserName: 'pin', memNum: 12323 }
   ];
+
+  //delete not implemented as would need to delete from db not local
   
   var app = new Vue({
     el: '#app',
