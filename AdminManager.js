@@ -73,4 +73,4 @@ function opencreteClubMenu() {
         }
       }
     }
-  });M
+  });
