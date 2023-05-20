@@ -63,7 +63,9 @@
               v-model="searchUsername"
             />
             <br />
-            <button id="removeUser" class="userOption">Remove</button>
+            <button id="removeUser" class="userOption" v-on:click="removeUser">
+              Remove
+            </button>
             <button
               id="moreDetails"
               class="userOption1"

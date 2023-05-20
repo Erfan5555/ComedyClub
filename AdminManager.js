@@ -43,38 +43,45 @@ function opencreteClubMenu() {
 
 
 //needs to connect to db to get users
-  var users = [
-    { name: 'Bob Marlin', UserName: 'ManBat', memNum: 123456 },
-    { name: 'bart newmen', UserName: 'pappaSmurf', memNum: 123445 },
-    { name: 'manni bem', UserName: 'pin', memNum: 12323 }
-  ];
+var users = [
+  { name: 'Bob Marlin', UserName: 'ManBat', memNum: 123456 },
+  { name: 'bart newmen', UserName: 'pappaSmurf', memNum: 123445 },
+  { name: 'manni bem', UserName: 'pin', memNum: 12323 }
+];
 
-  //delete not implemented as would need to delete from db not local
-  
-  var app = new Vue({
-    el: '#app',
-    data: {
-      searchUsername: '',
-      users: users,
-      searchedUser: null
-    },
-    methods: {
-      searchUser: function() {
-        var searchedUsername = this.searchUsername;
-  
-        if (searchedUsername) {
-          var foundUser = this.users.find(function(user) {
-            return user.UserName === searchedUsername;
-          });
-  
-          if (foundUser) {
-            this.searchedUser = foundUser;
-          } else {
-            this.searchedUser = null;
-          }
+var app = new Vue({
+  el: '#app',
+  data: {
+    searchUsername: '',
+    users: users,
+    searchedUser: null
+  },
+  methods: {
+    searchUser: function() {
+      var searchedUsername = this.searchUsername;
+
+      if (searchedUsername) {
+        var foundUser = this.users.find(function(user) {
+          return user.UserName === searchedUsername;
+        });
+
+        if (foundUser) {
+          this.searchedUser = foundUser;
         } else {
           this.searchedUser = null;
         }
+      } else {
+        this.searchedUser = null;
+      }
+    },
+    removeUser: function() {
+      if (this.searchedUser) {
+        var index = this.users.indexOf(this.searchedUser);
+        if (index !== -1) {
+          this.users.splice(index, 1);
+        }
+        this.searchedUser = null;
       }
     }
-  });
+  }
+});
